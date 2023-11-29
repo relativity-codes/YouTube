@@ -1,0 +1,100 @@
+.movie-card-container {
+    width: 100%;
+    height: 300px;
+    min-width: 255px;
+    border-radius: 20px;
+    border: 1px solid var(#969696, #969696);
+    background-color: rgba(211, 211, 211, 0.501);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-card-container .top {
+    padding: 15px 15px 15px 15px;
+    width: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.movie-card-container .top .icon1 {
+    margin-right: 15px;
+    position: relative;
+    display: flex;
+    border-radius: 14px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(60, 2, 81, 0.62);
+    background: linear-gradient(99deg, #FFF 3.36%, rgba(255, 255, 255, 0.00) 238.16%);
+    cursor: pointer;
+}
+
+.movie-card-container .top .icon1 img {
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+
+.movie-card-container .top .icon2 {
+    margin-right: 15px;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(60, 2, 81, 0.62);
+    background: linear-gradient(99deg, #FFF 3.36%, rgba(255, 255, 255, 0.00) 238.16%);
+    cursor: pointer;
+}
+
+.movie-card-container .top .icon2 img {
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+
+.movie-card-container .bottom {
+
+    color: black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    width: inherit;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid var(--Gray, #969696);
+    background: linear-gradient(100deg, #FFF 12.94%, rgba(255, 255, 255, 0.00) 159.1%);
+}
+
+.movie-card-container .bottom .name {
+    padding: 10px 10px 0 15px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+}
+
+.movie-card-container .bottom .year {
+    padding: 3px 10px 0 15px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 114.286% */
+}

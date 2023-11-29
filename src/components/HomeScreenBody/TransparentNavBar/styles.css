@@ -1,0 +1,48 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    height: 65px;
+    padding: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-container .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+}
+
+.navbar-container .section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+}
+
+.navbar-container .section .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.navbar-container .section .avatar-name {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
