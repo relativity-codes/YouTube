@@ -1,0 +1,64 @@
+.container {
+    position: fixed;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    width: 100vw;
+    height: 100vh;
+    background: url('http://localhost:3000/welcome-screen-background.gif') lightgray 50% / cover no-repeat;
+    overflow: hidden;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.center-container .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.center-container .content {
+    color: #290037;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    padding-bottom: 30px;/* 111.111% */
+}
+
+.center-container .items a button{
+    width: 224px;
+    text-align: center;
+    height: 54px;
+    flex-shrink: 0;
+    border: 0px;
+    border-radius: 14px;
+    background: #290037;
+    color: #D9E5DA;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+}
+
+.center-container .content .sign-up {
+    color: #290037;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration-line: underline;
+    padding: 10px;
+}
