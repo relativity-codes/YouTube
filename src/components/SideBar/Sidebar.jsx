@@ -43,25 +43,34 @@ function Sidebar() {
     return (
         <div className='sidebar-container'>
             <div className='logo-section'>
-                <div className='logo'><img src={'/svgicons/coffe.svg'} alt="logo" height={30} width={30} /><span className='logo-name'>Binge Ghibli</span></div>
+                <div className='logo'>
+                    <img src={'/svgicons/coffe.svg'} alt="logo" height={30} width={30} />
+                    <span className='logo-name' >
+                        Binge Ghibli
+                    </span>
+                </div>
             </div>
             <div className='other-section'>
+                <div className='sections'>
+                    {
+                        linkgroupOne.map((items, index) => (
+                            <SidebarLinkCard key={index} href={items.href} title={items.title} icon={items.icon} />
+                        ))
+                    }
+                </div>
                 <div className='sections'>{
-                    linkgroupOne.map((items, index) => (
-                        <SidebarLinkCard key={index} icon={items.icon} title={items.title} href={items.href} />
+                    linkgroupTwo.map((items, index) => (
+                        <SidebarLinkCard key={index} href={items.href} title={items.title} icon={items.icon} />
                     ))
                 }</div>
-                <div className='sections'>{linkgroupTwo.map((items, index) => (
-                    <SidebarLinkCard key={index} icon={items.icon} title={items.title} href={items.href} />
-                ))
-                }</div>
-                <div className='sections'>{linkgroupThree.map((items, index) => (
-                    <SidebarLinkCard key={index} icon={items.icon} title={items.title} href={items.href} />
-                ))
+                <div className='sections'>{
+                    linkgroupThree.map((items, index) => (
+                        <SidebarLinkCard key={index} href={items.href} title={items.title} icon={items.icon} />
+                    ))
                 }</div>
             </div>
         </div>
     )
 };
 
-export default Sidebar; 
+export default Sidebar;

@@ -25,18 +25,17 @@
     align-items: center;
 }
 
-
 .center-container .content {
     color: #290037;
     font-family: Poppins;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; 
-    padding-bottom: 30px;/* 111.111% */
+    line-height: 20px;
+    padding-bottom: 30px;
 }
 
-.center-container .items a button{
+.center-container .items a button {
     width: 224px;
     text-align: center;
     height: 54px;
@@ -49,7 +48,8 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 111.111% */
+    line-height: 20px;
+    /* 111.111% */
 }
 
 .center-container .content .sign-up {

@@ -1,6 +1,6 @@
-import MovieCard from './MovieCard/MovieCard';
-import TransparentNavbar from './TransparentNavBar/TransparentNavbar';
 import './styles.css';
+import MovieCard from './MovieCard/MovieCard';
+import TransParentNavBar from './TransparentNavBar/TransParentNavBar';
 import React from 'react';
 
 function HomeScreenBody() {
@@ -62,41 +62,41 @@ function HomeScreenBody() {
     ];
     return (
         <div className='home-screen-body-container'>
-            <div className='navbar-section'>
-                <TransparentNavbar />
-            </div>
+            <div className='navbar-section'><TransParentNavBar /></div>
             <div className='section-top' style={{ backgroundImage: "url('/images/spirited-away.gif')" }}>
                 <div className='inner-container'>
                     <div className='space'></div>
                     <div className='content-description'>
                         <div className='movie-name'>Spirited Away</div>
                         <div className='movie-classification'>2001 | Fantasy |  Movie</div>
-                        <div className='button-section'><div className='button'><div>Watch now</div></div><div className='icon'><img src={'/svgicons/heart-white.svg'} alt="icon" /></div></div>
+                        <div className='button-section'><div className='button'>Watch Now</div> <div className='icon'><img src={'/svgicons/heart-white.svg'} alt="icon" /></div></div>
                     </div>
                 </div>
             </div>
-            <div className='section-middle-buttom'>
+            <div className='section-middle-bottom'>
                 <div className='wrapper-trending'>
                     <h3>Trending</h3>
                     <div className='trending'>
                         {trending.map((items, index) => (
                             <div className='items'>
-                                <MovieCard key={index} name={items.name} id={items.id} url={items.url} favorite={items.favorite} classifications={items.classifications} year={items.year} />
-                            </div>))}
+                                <MovieCard key={index} name={items.name} year={items.year} classification={items.classifications} url={items.url} id={items.id} favorite={items.favorite} />
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className='wrapper-continue-watching'>
-                    <h3>Continue watching</h3>
+                    <h3>Continue Watching</h3>
                     <div className='continue-watching'>
                         {continue_watching.map((items, index) => (
                             <div className='items'>
-                                <MovieCard key={index} name={items.name} id={items.id} url={items.url} favorite={items.favorite} classifications={items.classifications} year={items.year} />
-                            </div>))}
+                                <MovieCard key={index} name={items.name} year={items.year} classification={items.classifications} url={items.url} id={items.id} favorite={items.favorite} />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
     )
-};
+}
 
-export default HomeScreenBody;
+export default HomeScreenBody

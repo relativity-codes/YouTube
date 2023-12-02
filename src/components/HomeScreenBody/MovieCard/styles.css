@@ -1,9 +1,9 @@
 .movie-card-container {
     width: 100%;
     height: 300px;
-    min-width: 255px;
+    min-height: 255px;
     border-radius: 20px;
-    border: 1px solid var(#969696, #969696);
+    border: 1px solid var(#969696 #969696);
     background-color: rgba(211, 211, 211, 0.501);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 }
 
 .movie-card-container .top {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px;
     width: inherit;
     display: flex;
     justify-content: flex-end;
@@ -35,7 +35,8 @@
     cursor: pointer;
 }
 
-.movie-card-container .top .icon1 img {
+.movie-card-container .top .icon1 img,
+.icon2 img {
     margin: auto;
     height: 20px;
     width: 20px;
@@ -43,8 +44,8 @@
 
 .movie-card-container .top .icon2 {
     margin-right: 15px;
-    display: flex;
     position: relative;
+    display: flex;
     border-radius: 50%;
     height: 45px;
     width: 45px;
@@ -53,14 +54,7 @@
     cursor: pointer;
 }
 
-.movie-card-container .top .icon2 img {
-    margin: auto;
-    height: 20px;
-    width: 20px;
-}
-
 .movie-card-container .bottom {
-
     color: black;
     font-family: Poppins;
     font-size: 16px;
@@ -75,7 +69,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 0px 0px 20px 20px;
-    border: 1px solid var(--Gray, #969696);
+    border: 1px solid var(#969696, #969696);
     background: linear-gradient(100deg, #FFF 12.94%, rgba(255, 255, 255, 0.00) 159.1%);
 }
 
